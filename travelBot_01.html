@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBot!</title>
+
+    <script>
+
+        alert("Hola Usuario, soy el TravelBot y estoy acá para ayudarte a decidir tu destino soñado de acuerdo a las millas que tengas acumuladas. Para eso, necesitaré hacerte una simple pregunta!");
+
+        let destino = parseFloat(prompt("¿Cuántas millas juntaste?"));
+        let tarjetaVip = prompt("¿Posee usted una tarjeta de acceso VIP?");
+        let beneficioVip = " Además, por ser un miembro VIP contarás con un 30% de descuento en hoteles seleccionados.";
+
+        if(destino <= 1999){
+            alert("Lo sentimos, con esas millas no puedes ir ni al Parque de la Costa. ¡Vamos, a reventar esa tarjeta para sumar millas!");
+        }
+
+        else if(destino <= 3999){
+                if(tarjetaVip == "si"){
+                    alert("Felicitaciones, tus millas son suficientes para que viajes a cualquier destino dentro del país!" + beneficioVip);
+                }
+                else{
+                    alert("Felicitaciones, tus millas son suficientes para que viajes a cualquier destino dentro del país!");
+                }
+            }
+
+            
+        else if(destino <= 9999){
+                if(tarjetaVip == "si"){
+                    alert("Felicitaciones, Europa o Estados Unidos te esperan!" + beneficioVip);
+                }
+                else{
+                    alert("Felicitaciones, Europa o Estados Unidos te esperan!");
+                }
+            }
+        
+        
+        else if(destino >= 10000){
+                if(tarjetaVip == "si"){
+                    alert("Felicitaciones,, SpaceX se complace en recibirte como parte de la tripulación de su próximo viaje a Marte!" + beneficioVip + " Por supuesto, el beneficio Vip podrá ser solicitado vez que haya hoteles en Marte! xD");
+                }
+                else{
+                    alert("Felicitaciones, SpaceX se complace en recibirte como parte de la tripulación de su próximo viaje a Marte!");
+                }
+            }
+
+        
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
