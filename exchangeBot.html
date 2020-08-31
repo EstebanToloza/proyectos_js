@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExchangeBot</title>
+
+    <script>
+
+        alert("Hola, soy el ExchangeBoy y estoy acá para ayudarte a realizar la compra de divisas necesarias para tu próximo viaje!")
+
+        let monedaCompra = prompt("Qué moneda posees? Las opciones son: peso, dolar, euro, yen o bitcoin");
+        let monedaVenta = prompt("Qué moneda deseas comprar?");
+        let montoDeseado = parseFloat(prompt("Qué monto deseas comprar?"));
+        let peso = 1;
+        let dolar = 134;
+        let euro = 157;
+        let yen = 0.70;
+        let bitcoin = 870267.86;
+
+        if(monedaCompra == "dolar", "euro", "yen", "bitcoin" && monedaVenta == "peso"){
+            alert("Estás a punto de cambiar una moneda real por papel falsificado sin valor alguno. Te pedimos que reconsideres tu operación y visites de manera urgente a un médico. De nuestra parte ya hemos dado aviso al 911.");
+        }
+
+        else if(monedaCompra == "peso"){
+            if(monedaVenta == "dolar"){
+                alert("Para comprar tu monto deseado, necesitas " + dolar / peso * montoDeseado + " pesos");
+            }
+            else if(monedaVenta == "euro"){
+                alert("Para comprar tu monto deseado, necesitas " + euro / peso * montoDeseado + " pesos");
+            }
+            else if(monedaVenta == "yen"){
+                alert("Para comprar tu monto deseado, necesitas " + yen / peso * montoDeseado + " pesos");
+            }
+            else if(monedaVenta == "bitcoin"){
+                alert("Para comprar tu monto deseado, necesitas " + bitcoin / peso * montoDeseado + " pesos");
+            }
+        }
+
+        else if(monedaCompra == "dolar"){
+            if(monedaVenta == "bitcoin"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / dolar * bitcoin * montoDeseado + " dolares");
+                }
+            else if(monedaVenta == "euro"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / dolar * euro * montoDeseado + " dolares");
+            }
+
+            else if(monedaVenta == "yen"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / dolar * yen * montoDeseado + " dolares");
+            }
+            
+        }
+
+        else if(monedaCompra == "euro"){
+            if(monedaVenta == "bitcoin"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / euro * bitcoin * montoDeseado + " euros");
+                }
+            else if(monedaVenta == "dolar"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / euro * dolar * montoDeseado + " euros");
+            }
+
+            else if(monedaVenta == "yen"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / euro * yen * montoDeseado + " euros");
+            }
+            
+        }
+
+        else if(monedaCompra == "yen"){
+            if(monedaVenta == "bitcoin"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / yen * bitcoin * montoDeseado + " yenes");
+                }
+            else if(monedaVenta == "dolar"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / yen * dolar * montoDeseado + " yenes");
+            }
+
+            else if(monedaVenta == "euro"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / yen * euro * montoDeseado + " yenes");
+            }
+            
+        }
+
+        else if(monedaCompra == "bitcoin"){
+            if(monedaVenta == "yen"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / bitcoin * yen * montoDeseado + " bitcoins");
+                }
+            else if(monedaVenta == "dolar"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / bitcoin * dolar * montoDeseado + " bitcoins");
+            }
+
+            else if(monedaVenta == "euro"){
+                alert("Para comprar tu monto deseado, necesitas " + peso / bitcoin * euro * montoDeseado + " bitcoins");
+            }
+            
+        }
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
