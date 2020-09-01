@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzarBot</title>
+
+    <script>
+        
+        alert("Hola, usuario! Ansioso de saber tu suerte? Nuestro Bot de la fortuna está acá para ayudarte!")
+        
+        let numeroDeLaSuerte = parseFloat(prompt("Selecciona tu número de la suerte, puede ser un número comprendido entre 1 y 50"));
+        
+        alert("A continuación, nuestro Bot de la fortuna te dirá si hoy es tu día de suerte... o no!")
+        
+        let azarBot = (Math.round(Math.random() * 49) + 1);
+
+        if (numeroDeLaSuerte == azarBot){
+            alert("El Bot de la fortuna ha elegido el número " + azarBot + ". Felicitaciones, hoy es tu día de suerte!");
+        }
+
+        else{
+            alert("El Bot de la fortuna ha elegido el número " + azarBot + ". Seguí participando! Y no olvides salir con paraguas!");
+        }
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
