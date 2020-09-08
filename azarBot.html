@@ -13,7 +13,10 @@
         
         alert("A continuación, nuestro Bot de la fortuna te dirá si hoy es tu día de suerte... o no!")
         
-        let azarBot = (Math.round(Math.random() * 49) + 1);
+        let azarBot = (Math.round(Math.random() * 49) + 1); 
+
+        //La función Math.round retorna el valor de un número redondeado al entero más cercano.
+        //La función Math.random  retorna un punto flotante, un número pseudo-aleatorio dentro del rango [0, 1).
 
         if (numeroDeLaSuerte == azarBot){
             alert("El Bot de la fortuna ha elegido el número " + azarBot + ". Felicitaciones, hoy es tu día de suerte!");

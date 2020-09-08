@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecordaBot! Tu memoria virtual!</title>
+
+    <script>
+
+        alert("Hola! Soy el recordaBot: tu asistente virtual!");
+
+        let recordatorio = [];
+
+        while(prompt("Desea agregar un recordatorio? (SI/NO)") == "SI"){
+            nuevo_recordatorio = prompt("Ingrese su recordatorio");
+            recordatorio.push(nuevo_recordatorio);
+
+        }
+
+        let mensaje;
+
+        if(prompt("Desea ver el listado de recordatorios (SI/NO)") == "SI"){
+            let mensaje = "";
+            for (let index = 0; index < recordatorio.length; index++) {
+                let elemento = recordatorio[index];
+                mensaje = mensaje + "Mañana " + (index + 1) + ": " + elemento + "\n";                
+            }
+            alert(mensaje);
+        }
+
+        while(prompt("Desea quitar un recordatorio? (SI/NO)") == "SI"){
+            quitar_recordatorio = prompt("Ingrese el número de recordatorio que desea borrar: ");
+            recordatorio.splice(quitar_recordatorio);
+        
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
