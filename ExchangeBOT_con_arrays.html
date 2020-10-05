@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ExchangeBOT</title>
+    <script>
+        
+        let cambios = ['Y', 'D', 'EU', 'PU', 'R'];
+        let moneda = ['Yenes', 'Dólares', 'Euros', 'Pesos Uruguayos', 'Reales'];
+        let tasas = [1.44, 0.0135, 0.0115, 0.5, 0.5];
+
+        alert("Hola, soy ExchangeBOT, su asistente de cambios!");
+
+        while(prompt("Desea realizar una nueva operación? (SI/NO)")=="SI"){
+        
+            let nombre = prompt("¿Cuál es su nombre?");
+            let moneda_destino = prompt(nombre + " ¿cuál moneda desea comprar? (EU/D/Y/PU/R)");
+            let pesos = parseInt(prompt(nombre + " ¿cuántos pesos desea utilizar?"));
+            
+            let indice = cambios.indexOf(moneda_destino); 
+            let cambio = pesos * tasas[indice];
+
+            alert(nombre + " Ud recibirá: " + cambio + " " + moneda[indice]);
+        }
+        
+        alert("Gracias por usar ExchangeBOT!");    
+    
+    </script>
+</head>
+<body>    
+</body>
+</html>

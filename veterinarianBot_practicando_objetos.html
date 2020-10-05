@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeterinarianBot</title>
+
+    <script>
+
+        let agenda = [];
+
+        alert("Hola! Soy VeterinarianBot, su asistente veterinario!");
+        
+        while(prompt("¿Desea ingresar un nuevo paciente? (SI/NO)") == "SI"){
+            let nombre = prompt("Ingrese nombre");
+            let edad = prompt("Ingrese edad");
+            let peso = prompt("Ingrese peso");
+            let raza = prompt("Ingrese raza");
+            let diagnostico = prompt("Ingrese diagnóstico");
+
+            let paciente = {
+                nombre: nombre,
+                edad: edad,
+                peso: peso,
+                raza: raza,
+                diagnostico: diagnostico
+            }
+
+            agenda.push(paciente);
+
+        }
+
+        let mensaje = " ";
+        for (let index = 0; index < agenda.length; index++) {
+            let paciente = agenda[index];
+            mensaje = mensaje + "Paciente Nº" + (index + 1) + ": " + paciente + agenda.index[diagnostico] + "\n";
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

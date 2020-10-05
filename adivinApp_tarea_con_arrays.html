@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdivinApp!</title>
+    <script>
+        
+        alert("Hola Usuario! Soy Adivinator! El amo del futuro!");
+        alert("Hazme cualquier pregunta por Sí o por No! y yo te diré tu futuro...");
+        
+        let nombre = prompt("Dime, cuál es tu nombre?");
+        let quiere_jugar = prompt(nombre + " te gustaría jugar conmigo? (SI/NO)");
+
+        while (quiere_jugar== "SI"){
+
+            let pregunta = (prompt("Dime " + nombre + " ¿Qué te gustaría saber?"));
+            
+            let respuesta = ["Dalo por hecho", "Es muy probable", "Mm... tu futuro no está claro", "No lo creo", "No cuentes con ello"];
+            
+            alert(nombre + " la respuesta a tu pregunta es...");
+            
+            alert(respuesta[Math.floor(Math.random() * respuesta.length)]);
+            
+            quiere_jugar = prompt("Quieres volver a jugar?(SI/NO)");
+
+        }
+
+        alert("Adios...");    
+    
+    </script>
+</head>
+<body>    
+</body>
+</html>
