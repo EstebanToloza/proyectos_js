@@ -1,0 +1,238 @@
+:root{
+    font-size: 62.5%; /* 62.5% de 16px es igual a 10px*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem; /* 15px */
+    color: #232323;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 10rem;
+
+}
+
+button{
+    display: none;
+}
+
+
+
+/*--------HEADER--------*/
+header{
+    background-color: #232323;
+    padding: 2rem;
+    overflow: hidden; /*!!!*/
+}
+
+header h1{
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 6rem; /*60px*/
+    font-size: 2.5rem; /*25px*/
+    font-weight: 600;
+    color: #fff;
+    float: left;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px; /* afecta a los a */
+    display: block;
+}
+
+header a:hover{ /* pseudo clase */
+    background-color: #fff;
+    color: #000;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+
+/*--------CARROUSEL--------*/
+#noticias-destacadas h2 mark{
+    color: #fff;
+    background-color: red;
+    font-size: 3rem;
+    line-height: 5rem;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+
+
+/*--------NOTICIAS--------*/
+#ultimas-noticias{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.noticia{
+    display: flex;
+    border-bottom: solid 1px #eaeaea;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.noticia:last-child{
+    border: none;
+}
+
+.noticia-img {
+    width: 30%;
+}
+
+.noticia-txt{
+    width: 68%;
+}
+
+.noticia-txt h3{
+    font-size: 3rem;
+    line-height: 3.3rem;
+    font-weight: 700;
+}
+
+.noticia-txt p{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.noticia-txt p:last-child{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.noticia-txt h3,
+.noticia-txt p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/*--------TABLA CSS--------*/
+#tabla-posiciones td,
+#tabla-posiciones th{
+    padding: 12px;
+}
+
+#tabla-posiciones th{
+    background-color: red;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#tabla-posiciones tr{
+    border-bottom: solid 1px lightgray;
+}
+
+#tabla-posiciones td{
+    background-color:#eaeaea;
+    vertical-align: middle;
+}
+
+#tabla-posiciones table{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabla-posiciones tr:first-child,
+#tabla-posiciones tr:last-child{
+    border-bottom: none;
+}
+
+#tabla-posiciones td:nth-of-type(odd){ /*impar*/
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+#tabla-posiciones td:nth-of-type(even) span{
+    color: teal;
+    font-weight: 700;
+}
+
+
+
+/*---MEDIA QUERIES---*/
+@media screen and (max-width:600px){
+    nav{
+        display: none;
+        float: none;
+        clear: left;
+        padding-top: 3rem;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    button:focus + nav{
+        display: block;
+    }
+
+    button{
+        display: block;
+        float: right;
+        color: #fff;
+        background-color: transparent;
+        font-size: 2rem;
+        border: none;
+        line-height: 1;
+        padding: 1rem;
+    }
+
+    .noticia{
+        flex-direction: column;
+    }
+
+    .noticia-img,
+    .noticia-txt{
+        width: 100%;
+    }
+
+    #tabla-posiciones{
+        display: none;
+    }
+}
+
+
+
+/*---OTROS---*/
+.no-display{
+    display: none;
+}
+
+.show{
+    transition: 1s;
+    opacity: 1 !important;
+    visibility: visible !important;
+}

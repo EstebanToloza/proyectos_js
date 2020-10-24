@@ -9,4 +9,4 @@ const mostrarNoticias = async function(){
     alert("Ups, parece que no hay noticias")
 }
 
-//window.onload = mostrarNoticias(
+//window.onload = mostrarNoticias
